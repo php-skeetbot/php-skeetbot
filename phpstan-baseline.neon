@@ -1,2 +1,86 @@
 parameters:
-	ignoreErrors: []
+	ignoreErrors:
+		-
+			message: "#^Cannot access offset 'accessJwt' on mixed\\.$#"
+			count: 1
+			path: src/BlueskyAppPW.php
+
+		-
+			message: "#^Cannot access offset 'refreshJwt' on mixed\\.$#"
+			count: 2
+			path: src/BlueskyAppPW.php
+
+		-
+			message: "#^Cannot access property \\$did on mixed\\.$#"
+			count: 1
+			path: src/BlueskyAppPW.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 2
+			path: src/BlueskyAppPW.php
+
+		-
+			message: "#^Method PHPSkeetBot\\\\PHPSkeetBot\\\\BlueskyAppPW\\:\\:cleanBodyParams\\(\\) should return array\\<string, string\\> but returns array\\<int\\|string, bool\\|float\\|int\\|string\\|null\\>\\.$#"
+			count: 1
+			path: src/BlueskyAppPW.php
+
+		-
+			message: "#^Parameter \\#1 \\$object_or_class of function property_exists expects object\\|string, mixed given\\.$#"
+			count: 1
+			path: src/BlueskyAppPW.php
+
+		-
+			message: "#^Property chillerlan\\\\OAuth\\\\Core\\\\AccessToken\\:\\:\\$accessToken \\(string\\|null\\) does not accept mixed\\.$#"
+			count: 1
+			path: src/BlueskyAppPW.php
+
+		-
+			message: "#^Property chillerlan\\\\OAuth\\\\Core\\\\AccessToken\\:\\:\\$extraParams \\(array\\<string, mixed\\>\\) does not accept mixed\\.$#"
+			count: 1
+			path: src/BlueskyAppPW.php
+
+		-
+			message: "#^Property chillerlan\\\\OAuth\\\\Core\\\\AccessToken\\:\\:\\$refreshToken \\(string\\|null\\) does not accept mixed\\.$#"
+			count: 1
+			path: src/BlueskyAppPW.php
+
+		-
+			message: "#^Cannot access offset '\\$link' on mixed\\.$#"
+			count: 1
+			path: src/SkeetBot.php
+
+		-
+			message: "#^Cannot access offset 'blob' on mixed\\.$#"
+			count: 2
+			path: src/SkeetBot.php
+
+		-
+			message: "#^Cannot access offset 'ref' on mixed\\.$#"
+			count: 1
+			path: src/SkeetBot.php
+
+		-
+			message: "#^Method PHPSkeetBot\\\\PHPSkeetBot\\\\SkeetBot\\:\\:submitSkeet\\(\\) has parameter \\$body with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/SkeetBot.php
+
+		-
+			message: "#^Method PHPSkeetBot\\\\PHPSkeetBot\\\\SkeetBot\\:\\:uploadMedia\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/SkeetBot.php
+
+		-
+			message: "#^Method PHPSkeetBot\\\\PHPSkeetBot\\\\SkeetBot\\:\\:uploadMedia\\(\\) should return array\\|null but returns mixed\\.$#"
+			count: 1
+			path: src/SkeetBot.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$values of function sprintf expects bool\\|float\\|int\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/SkeetBot.php
+
+		-
+			message: "#^Parameter \\$headers of method chillerlan\\\\OAuth\\\\Core\\\\OAuthProvider\\:\\:request\\(\\) expects array\\<string, string\\>\\|null, array\\<string, mixed\\> given\\.$#"
+			count: 1
+			path: src/SkeetBot.php
